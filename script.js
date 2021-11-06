@@ -40,6 +40,7 @@ function renderEmployeeItems(addEmployeeInfo){
            <td>${employee.id}</td>
            <td>${employee.title}</td>
            <td>${employee.annualSalary}</td>
+           <td><button>Delete</button></td>
        </tr> 
        `;
        $('#salaryCalculatorTableBody').append(newTableRow);
@@ -55,7 +56,10 @@ function renderEmployeeItems(addEmployeeInfo){
  let sum = 0;
  for (let employee of addEmployeeInfo){
  sum += employee.annualSalary /12;
- }
+  if (sum >20000){
+     $('h4').css("background-color", "red");
+  }
+}
    return sum;
  }
 

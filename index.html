@@ -4,19 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
   <script src="jquery-3.6.0.min.js" charset="utf-8"></script>
   <script src="script.js" charset="utf-8"></script>
 <body>
-  <input id="firstName" type="text" placeholder="First Name">
+  <div>
+  <table>
+    <thead>
+      <tr>
+        <h1>Salary Calculator</h1>
+        <h2 id="aEmployee">Add Employee</h2>
+        <input id="firstName" type="text" placeholder="First Name">
   <input id="lastName" type="text" placeholder="Last Name">
   <input id="id" type="number" placeholder="ID">
   <input id="title" type="text" placeholder="Title">
   <input id="annualSalary" type="number" placeholder="Annual Salary">
   <button id="theSubmitButton">Submit</button>
-  <table>
-    <thead>
-      <tr>
-        <!-- <h1>Salary Calculator</h1> -->
         <h2>Employees</h2>
     
         <th>First Name</th>
@@ -41,10 +44,10 @@
       </tr>
     </tbody>
   </table>
-
   <footer>
     <h2>Total Monthly:</h2>
     <h4 id="totalMonthly"></h4>
   </footer>
+</div>
 </body>
 </html>
