@@ -6,18 +6,13 @@
   <title>Document</title>
   <script src="jquery-3.6.0.min.js" charset="utf-8"></script>
   <script src="script.js" charset="utf-8"></script>
-</head>
 <body>
-  <h1>Salary Calculator</h1>
-
-
-  <input type="text" placeholder="First Name" id="firstName">
-  <input type="text" placeholder="Last Name" id="lastName">
-  <input type="number" placeholder="ID" id="id">
-  <input type="text" placeholder="Title" id="title">
-  <input type="number" placeholder="Annual Salary" id="annualSalary">
-  <button id="submitButton">Submit</button>
-
+  <input id="firstName" type="text" placeholder="First Name">
+  <input id="lastName" type="text" placeholder="Last Name">
+  <input id="id" type="number" placeholder="ID">
+  <input id="title" type="text" placeholder="Title">
+  <input id="annualSalary" type="number" placeholder="Annual Salary">
+  <button id="theSubmitButton">Submit</button>
   <table>
     <thead>
       <tr>
@@ -41,13 +36,15 @@
         <td>80,000</td>
       </tr>
       <tr>
-        
+        <!-- <td>Camera</td>
+        <td>50</td> -->
       </tr>
     </tbody>
   </table>
 
   <footer>
-    <h1 id="totalMonthly">Total Monthly:</h1>
+    <h2>Total Monthly:</h2>
+    <h4 id="totalMonthly"></h4>
   </footer>
 </body>
 </html>
